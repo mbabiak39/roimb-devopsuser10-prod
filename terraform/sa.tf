@@ -13,7 +13,7 @@ resource "google_project_iam_member" "function_sa_binding" {
 }
 
 resource "google_service_account" "cloud_build" {
-  account_id = "cloud-build"
+  account_id = "cloud-build-prod"
   display_name = "Service account for Cloud build deployments"
 }
 

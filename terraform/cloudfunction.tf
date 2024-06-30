@@ -3,7 +3,7 @@ resource "google_cloudfunctions_function" "function" {
   name = var.function
   available_memory_mb = 256
   runtime = "python39"
-  source_archive_bucket = "cloud_functions_dev"
+  source_archive_bucket = "cloud_functions_prod"
   source_archive_object = "pluto.zip"
   entry_point = "pubsub_to_bigquery"
   timeout = 60
@@ -18,7 +18,7 @@ resource "google_cloudfunctions_function" "stop_vm" {
   name = "stop_vm"
   available_memory_mb = 256
   runtime = "python39"
-  source_archive_bucket = "cloud_functions_dev"
+  source_archive_bucket = "cloud_functions_prod"
   source_archive_object = "pluto.zip"
   entry_point = "stop_vm"
   timeout = 60

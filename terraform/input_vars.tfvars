@@ -9,13 +9,13 @@ services = [
   "compute.googleapis.com"
   ]
 
-project_id = "roimb-devopsuser10-dev"
+project_id = "roimb-devopsuser10-prod"
 
 topic = "activities"
 
 function = "pubsubtobq"
 
-function_sa = "plutosa"
+function_sa = "plutosa-prod"
 
 asset_list = [
         "compute.googleapis.com/Instance",

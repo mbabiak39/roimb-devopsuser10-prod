@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket  = "roimb-devopsuser10-dev-tf-state"
+    bucket  = "roimb-devopsuser10-prod-tf-state"
     prefix  = "terraform/state"
   }
 }
